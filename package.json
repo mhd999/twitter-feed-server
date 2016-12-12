@@ -1,0 +1,27 @@
+{
+  "name": "twitter-feed-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "babel-watch  ./bin/www",
+    "test": "babel-node ./node_modules/.bin/_mocha --require babel-register --reporter spec"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "cors": "^2.8.1",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "redis": "^2.6.3",
+    "server-sent-events": "^1.0.0",
+    "twitter": "^1.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-watch": "^2.0.4",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "supertest": "^2.0.1"
+  }
+}
